@@ -74,16 +74,6 @@ body {
           flex-direction: column;
 }
 
-header {
-  background-color: #794f45;
-  padding: 15px;
-}
-
-footer {
-  background-color: #794f45;
-  padding: 15px;
-}
-
 main {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
