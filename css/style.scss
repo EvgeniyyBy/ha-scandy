@@ -215,6 +215,7 @@ main {
         text-align: center;
         line-height: 50px;
         margin-bottom: 40px;
+        text-transform: uppercase;
     }
 
     // .about-us__wrapper
@@ -248,10 +249,9 @@ main {
     // .about-us__list
 
     &__list {
-        
         background-color: #8D7370;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         padding-left: 89px;
         padding-right: 89px;
         padding-top: 85px;
@@ -265,6 +265,10 @@ main {
         flex-direction: column;
         align-items: center;
         color: #FFF;
+
+        &:not(:last-child) {
+            margin-right: 390px;
+        }
     }
 
     // .about-us__list-number
@@ -287,6 +291,7 @@ main {
 
 .work {
     padding-top: 65px;
+    padding-bottom: 65px;
 
     // .work__title
 
@@ -294,6 +299,7 @@ main {
         font-size: 40px;
         line-height: 50px;
         margin-bottom: 40px;
+        text-transform: uppercase;
     }
 
     // .work__wrapper
@@ -381,6 +387,7 @@ main {
         line-height: 50px;
         margin-bottom: 40px;
         text-align: center;
+        text-transform: uppercase;
     }
 
     // .team__wrapper
@@ -398,9 +405,191 @@ main {
 
     // .team__avatar
 
-    &__avatar {}
+    &__avatar {
+        margin-bottom: 10px;
+    }
 
     // .team__text
 
     &__text {}
+}
+
+//** SCHEME WORK */
+
+.scheme-work {
+    background-color: #E2C4BA;
+    padding-bottom: 80px;
+    // .scheme-work__title
+
+    &__title {
+        font-size: 40px;
+        line-height: 50px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    // .scheme-work__list
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    // .scheme-work__item
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 285px;
+        margin-bottom: 20px;
+    }
+
+    // .scheme-work__num
+
+    &__num {
+        font-size: 30px;
+        // line-height: 30px;
+        color: #fff;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background-color: #8D7370;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    // .scheme-work__text
+
+    &__text {}
+}
+
+//** REVIEWS */
+
+.reviews {
+    padding-top: 65px;
+    padding-bottom: 65px;
+    // .reviews__container
+
+    &__container {}
+
+    // .reviews__title
+
+    &__title {
+        font-size: 40px;
+        line-height: 50px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    // .reviews__slider
+
+    &__slider {
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding-left: 101px;
+    }
+
+    // .reviews__blockquote
+
+    &__blockquote {
+        margin-right: 20px;
+    }
+
+    // .reviews__text
+
+    &__text {
+        max-width: 500px;
+
+        &:not(:last-child) {
+            margin-bottom: 60px;
+        }
+    }
+
+    // .reviews__images
+
+    &__images {}
+
+    // .reviews__img
+
+    &__img {
+        &:first-child {
+            margin-bottom: 24px;
+        }
+    }
+
+    &__btn-slider-left {
+        position: absolute;
+        left: 0;
+        width: 72px;
+        height: 72px;
+        background: #CC8B86;
+        border-radius: 50%;
+        background-image: url('../img/reviews-slider/arrow-left.svg');
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        cursor: pointer;
+    }
+
+    &__btn-slider-right {
+        position: absolute;
+        right: 160px;
+        width: 72px;
+        height: 72px;
+        background: #CC8B86;
+        border-radius: 50%;
+        background-image: url('../img/reviews-slider/arrow-right.svg');
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        cursor: pointer;
+    }
+}
+
+//** SUBMIT */
+
+.submit-application {
+    background-color: #8D7370;
+    // .submit-application__wrapper
+    color: #fff;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    // .submit-application__description
+
+    &__description {
+        margin-top: 50px;
+    }
+
+    // .submit-application__title
+
+    &__title {
+        font-size: 40px;
+        line-height: 50px;
+        text-transform: uppercase;
+    }
+
+    // .submit-application__text
+
+    &__text {
+        max-width: 460px;
+    }
+
+    // .submit-application__map
+
+    &__map {}
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
 }
