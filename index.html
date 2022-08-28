@@ -262,10 +262,10 @@
                                 Оставьте свои контакты. Менеджер перезвонит
                                 в удобное вам время и ответит на все вопросы.
                             </p>
-                            <form class="submit-application__form" action="echo">
-                                <input type="text" placeholder="Ваше имя">
-                                <input type="tel" placeholder="Введите телефон">
-                                <button>Оставить заявку</button>
+                            <form class="submit-application__form form" action="echo">
+                                <input class="form__input" type="text" placeholder="Ваше имя">
+                                <input class="form__input" type="tel" placeholder="Введите телефон">
+                                <button class="form__btn btn">Оставить заявку</button>
                             </form>
                         </div>
                         <div class="submit-application__map">
@@ -278,9 +278,11 @@
         </main>
         <footer class="page-footer">
             <div class="page-footer__container">
-                <p class="page-footer__phone">+7 (981) 857-46-24</p>
-                <p class="page-footer__adress">г. Санкт-петербург, ул. Большая Конюшенная, 19</p>
-                <p class="page-footer__copyright">ИП Королёва А.А.</p>
+                <div class="page-footer__wrapper">
+                    <p class="page-footer__phone">+7 (981) 857-46-24</p>
+                    <p class="page-footer__adress">г. Санкт-петербург, ул. Большая Конюшенная, 19</p>
+                    <p class="page-footer__copyright">ИП Королёва А.А.</p>
+                </div>
             </div>
         </footer>
     </div>
